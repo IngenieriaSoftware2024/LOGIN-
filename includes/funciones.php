@@ -35,8 +35,8 @@ function isAuthApi() {
 
 function isNotAuth(){
     session_start();
-    if(isset($_SESSION['auth'])) {
-        header('Location: /auth/');
+    if(isset($_SESSION['user'])) {
+        header('Location: menu');
     }
 }
 
